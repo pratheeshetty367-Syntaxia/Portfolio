@@ -7,7 +7,7 @@ import { FaWhatsapp } from "react-icons/fa";
 const PORTFOLIO = {
   name: "Pratheeksha Shetty",
   shortTitle: "MCA Student · Java Developer · Full-Stack Developer",
-  bio: "Motivated MCA student with a strong foundation in Java,Python, MERN stack and scalable web applications. Passionate about building inclusive, intelligent solutions that make a real difference in people's lives.",
+bio: "Motivated MCA student with a strong foundation in Java, Python, MERN stack and scalable web applications. Passionate about building inclusive, intelligent solutions that make a real difference in people's lives.",
   photo: "/photo.jpg",          // ← Put your photo as public/photo.jpg
   email: "pratheeshetty367@gmail.com",
   phone: "+91 8618221971",
