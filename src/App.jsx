@@ -7,7 +7,7 @@ import { FaWhatsapp } from "react-icons/fa";
 const PORTFOLIO = {
   name: "Pratheeksha Shetty",
   shortTitle: "MCA Student · Java Developer · Full-Stack Developer",
-  bio: "Motivated MCA student with a strong foundation in Java, MERN stack, and scalable web applications. Passionate about building inclusive, intelligent solutions that make a real difference in people's lives.",
+  bio: "Motivated MCA student with a strong foundation in Java,Python, MERN stack and scalable web applications. Passionate about building inclusive, intelligent solutions that make a real difference in people's lives.",
   photo: "/photo.jpg",          // ← Put your photo as public/photo.jpg
   email: "pratheeshetty367@gmail.com",
   phone: "+91 8618221971",
@@ -16,15 +16,15 @@ const PORTFOLIO = {
   resumePdf: "public/resume.pdf",      // ← Put your resume as public/resume.pdf
 
   skills: [
+     { name: "MySQL", icon: "🗄️", level: 90 },
     { name: "Java", icon: "☕", level: 88 },
-    { name: "JavaScript", icon: "🟡", level: 50 },
-    { name: "ReactJS", icon: "⚛️", level: 60 },
-    { name: "Node.js", icon: "🟢", level: 50 },
+    { name: "Python", icon: "🐍", level: 85 },
     { name: "MongoDB", icon: "🍃", level: 80 },
-    { name: "MySQL", icon: "🗄️", level: 90 },
+    { name: "Git & GitHub", icon: "🔗", level: 75 },
     { name: "Spring Boot", icon: "🌿", level: 72 },
-    { name: "Python", icon: "🐍", level: 70 },
-    { name: "Git & GitHub", icon: "🔗", level: 85 },
+    { name: "ReactJS", icon: "⚛️", level: 60 },
+    { name: "JavaScript", icon: "🟡", level: 50 },
+    { name: "Node.js", icon: "🟢", level: 50 },
   ],
 
   tooling: [
@@ -43,8 +43,8 @@ const PORTFOLIO = {
     {
       degree: "B.Sc – Mathematics & Computer Science",
       institution: "Canara College, Mangalore",
-      year: "2021 – 2025",
-      score: "CGPA: 8.02",
+      year: "2021 – 2024",
+      score: "CGPA: 8.06",
     },
     {
       degree: "Pre-University (12th)-PCMC",
@@ -61,16 +61,7 @@ const PORTFOLIO = {
   ],
 
   projects: [
-    {
-      title: "EMERQ",
-      subtitle: "Smart Emergency Triage System",
-      description:
-        "A full-stack emergency triage system with real-time patient monitoring, intelligent queue management, and REST API integration. Uses a priority-scoring algorithm based on patient vitals to categorize cases as Critical, High, Medium, or Low.",
-      tech: ["ReactJS", "Django REST", "MongoDB"],
-      github: "https://github.com/pratheeshetty367-Syntaxia",   // ← update
-      live: "",          // ← add your live URL here, leave blank to hide button
-      color: "#7C3AED",
-    },
+    
     {
       title: "ACCESSNOVA",
       subtitle: "AI-Powered Assistive Platform",
@@ -93,21 +84,58 @@ const PORTFOLIO = {
       color: "#7C3AED",
     },
     {
-      title: "TRUEHIRE",
-      subtitle: "AI Job Scam Detection Platform",
+  title: "FutureMe",
+  subtitle: "Messages to Your Future Self",
+  description:
+    "A time-capsule web application that lets users write personal letters to their future selves and schedule when they can be opened. Features secure authentication, a personal letter dashboard, date-and-time-based locking with a live countdown, letter editing, and deletion confirmation.",
+  tech: [
+    "Java 21",
+    "Spring Boot",
+    "Spring Security",
+    "Spring Data JPA",
+    "Thymeleaf",
+    "MySQL"
+  ],
+  github: "https://github.com/pratheeshetty367-Syntaxia/FutureMe",
+  live: "https://futureme-5ns9.onrender.com/letters",
+  color: "#A855F7",
+},
+{
+      title: "EMERQ",
+      subtitle: "Smart Emergency Triage System",
       description:
-      "An AI-powered job verification platform that analyzes job postings using NLP-based authenticity scoring, company verification, and fraud detection techniques to identify potentially fraudulent opportunities. Includes secure REST APIs, community-based scam reporting, and a searchable verification dashboard for validating job opportunities.",
-      tech: ["Java", "Spring Boot", "ReactJS", "MySQL", "NLP"],
-      github: "https://github.com/pratheeshetty367-Syntaxia",
-      live: "",
-      color: "#A855F7",
+        "A full-stack emergency triage system with real-time patient monitoring, intelligent queue management, and REST API integration. Uses a priority-scoring algorithm based on patient vitals to categorize cases as Critical, High, Medium, or Low.",
+      tech: ["ReactJS", "Django REST", "MongoDB"],
+      github: "https://github.com/pratheeshetty367-Syntaxia",   // ← update
+      live: "",          // ← add your live URL here, leave blank to hide button
+      color: "#7C3AED",
+      
     },
+   
+{
+  title: "QUESTLY",
+  subtitle: "Gamified Quest & Task Management App",
+  description:
+    "A game-inspired mobile productivity app that transforms everyday tasks into quests. Features task creation and editing, priority-based XP rewards, a leveling system, daily challenges, due dates, reminder notifications, and progress tracking. Built with React Native and Expo, with local data storage for offline use.",
+  tech: [
+    "React Native",
+    "Expo",
+    "JavaScript",
+    "AsyncStorage",
+    "Expo Notifications"
+  ],
+  github: "https://github.com/pratheeshetty367-Syntaxia/Questly",
+  live: "https://expo.dev/accounts/pratheeksha2903/projects/SmartToDoApp/builds/386254e0-4fcc-4878-bc95-babccb77fe13",
+  color: "#7C3AED",
+},
+
   ],
 
   certifications: [
     { title: "Cloud Computing & Distributed Systems", icon: "☁️" },
     { title: "Microsoft Applied AI", icon: "🤖" },
     { title: "Diploma in Computer Applications (DCA)", icon: "🎓" },
+    { title: "Salesforce AI associate badge"}
   ],
 
   achievements: [
@@ -203,8 +231,10 @@ function Hero() {
     } else if (deleting && typedText.length > 0) {
       timeout = setTimeout(() => setTypedText(typedText.slice(0, -1)), 45);
     } else if (deleting && typedText.length === 0) {
-      setDeleting(false);
-      setTIdx((i) => (i + 1) % titles.length);
+      timeout = setTimeout(() => {
+        setDeleting(false);
+        setTIdx((i) => (i + 1) % titles.length);
+      }, 0);
     }
     return () => clearTimeout(timeout);
   }, [typedText, deleting, tIdx]);
@@ -418,14 +448,24 @@ function Projects() {
                       GitHub ↗
                     </a>
                   )}
+                  
                   {p.live && (
-                    <a href={p.live} target="_blank" rel="noreferrer" className="project-link project-link--live">
-                      🚀 Live Demo
+                    <a
+                    href={p.live}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="project-link project-link--live"
+                    >
+                    {p.title === "QUESTLY"
+                    ? "📱 View App Build ↗"
+                    : `✨ ${p.title} Live Demo ↗`}
                     </a>
                   )}
+
                   {!p.live && (
                     <span className="project-link project-link--soon">Live Demo coming soon</span>
                   )}
+                  
                 </div>
               </div>
             </div>
