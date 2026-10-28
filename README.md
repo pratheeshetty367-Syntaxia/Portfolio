@@ -175,9 +175,9 @@ Canara College, Mangalore
 https://github.com/pratheeshetty367-Syntaxia
 
 **Portfolio:**  
-Coming soon
+https://portfolio-one-virid-71.vercel.app/
 
----
+
 
 ## ⚙️ Run Locally
 
