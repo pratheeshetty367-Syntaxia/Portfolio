@@ -61,17 +61,16 @@ bio: "Motivated MCA student with a strong foundation in Java, Python, MERN stack
   ],
 
   projects: [
-    
     {
-      title: "ACCESSNOVA",
-      subtitle: "AI-Powered Assistive Platform",
-      description:
-        "An AI-powered accessibility platform combining Braille-to-text and voice translation, smart navigation, sign language translation, and an AI learning assistant. Designed to provide accessible communication, navigation, and learning support through a unified platform.",
-      tech: ["MERN Stack", "OCR", "Web Speech API", "AI/ML"],
-      github: "https://github.com/pratheeshetty367-Syntaxia",
-      live: "",
-      color: "#A855F7",
-    },
+  title: "EL NIÑO XAI",
+  subtitle: "Explainable Extreme El Niño Prediction Platform",
+  description:
+    "An explainable AI web platform that classifies Extreme El Niño events 3, 6, 9 and 12 months ahead using five NOAA oceanic predictors. Class-weighted XGBoost models are validated with Leave-One-Out Cross-Validation and explained with SHAP. Includes prediction with class probabilities and SHAP explanations, predictor-importance and historical-event analysis, model comparison, a dataset explorer, prediction history, JWT authentication and an admin section. Based on my research paper.",
+  tech: ["ReactJS", "FastAPI", "PostgreSQL", "XGBoost", "SHAP", "JWT"],
+  github: "https://github.com/pratheeshetty367-Syntaxia/El-Nino",  // ← replace with your El Niño repo link
+  live: "https://extreme-elnino-predictor.vercel.app",
+  color: "#0EA5E9",
+},
 
    {
       title: "PLACEMENTIQ",
@@ -79,8 +78,8 @@ bio: "Motivated MCA student with a strong foundation in Java, Python, MERN stack
       description:
         "An AI-powered placement preparation platform with ATS-based resume analysis, job description matching, personalized interview question generation, and AI mock interviews. Includes real-time feedback, performance analytics, secure authentication, and progress tracking to help students prepare for technical and HR interviews.",
       tech: ["Spring Boot", "ReactJS", "PostgreSQL", "OpenAI API", "JWT", "REST APIs"],
-      github: "https://github.com/pratheeshetty367-Syntaxia",
-      live: "",
+      github: "https://github.com/pratheeshetty367-Syntaxia/PlacementIQ",
+      live: "https://placementiq-frontend.onrender.com/login",
       color: "#7C3AED",
     },
     {
@@ -100,17 +99,7 @@ bio: "Motivated MCA student with a strong foundation in Java, Python, MERN stack
   live: "https://futureme-5ns9.onrender.com/letters",
   color: "#A855F7",
 },
-{
-      title: "EMERQ",
-      subtitle: "Smart Emergency Triage System",
-      description:
-        "A full-stack emergency triage system with real-time patient monitoring, intelligent queue management, and REST API integration. Uses a priority-scoring algorithm based on patient vitals to categorize cases as Critical, High, Medium, or Low.",
-      tech: ["ReactJS", "Django REST", "MongoDB"],
-      github: "https://github.com/pratheeshetty367-Syntaxia",   // ← update
-      live: "",          // ← add your live URL here, leave blank to hide button
-      color: "#7C3AED",
-      
-    },
+
    
 {
   title: "QUESTLY",
@@ -317,18 +306,17 @@ function About() {
               matters. From intelligent triage systems to accessible learning platforms, I love
               turning complex problems into elegant solutions.
             </p>
-            <p>
-              My journey spans <strong className="accent">Java</strong> backend development,
-              <strong className="accent"> MERN stack</strong> web apps, and
-              <strong className="accent"> IoT</strong> projects. I believe technology should be
-              inclusive, efficient, and human-centered.
-            </p>
+            My journey spans <strong className="accent">Java & Spring Boot</strong> backend development,
+<strong className="accent">React.js</strong> web applications,
+<strong className="accent">Python</strong> development, and
+<strong className="accent">MySQL & MongoDB</strong> databases.
+I believe technology should be inclusive, efficient, and human-centered.
             <div className="about__stats">
               {[
-                { num: "8.2", label: "Current SGPA" },
-                { num: "2+", label: "Projects Built" },
+                { num: "8.39", label: "Current cgpa" },
+                { num: "6+", label: "Projects Built" },
                 { num: "3+", label: "Certifications" },
-                { num: "4", label: "Languages Known" },
+                { num: "4+", label: "Languages Known" },
               ].map((s) => (
                 <div className="stat-card" key={s.label}>
                   <div className="stat-num">{s.num}</div>
