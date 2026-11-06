@@ -211,22 +211,27 @@ function Hero() {
   const [deleting, setDeleting] = useState(false);
 
   useEffect(() => {
-    const current = titles[tIdx];
-    let timeout;
-    if (!deleting && typedText.length < current.length) {
-      timeout = setTimeout(() => setTypedText(current.slice(0, typedText.length + 1)), 80);
-    } else if (!deleting && typedText.length === current.length) {
-      timeout = setTimeout(() => setDeleting(true), 1800);
-    } else if (deleting && typedText.length > 0) {
-      timeout = setTimeout(() => setTypedText(typedText.slice(0, -1)), 45);
-    } else if (deleting && typedText.length === 0) {
-      timeout = setTimeout(() => {
+  const current = titles[tIdx];
+
+  const timeout = setTimeout(() => {
+    if (!deleting) {
+      if (typedText.length < current.length) {
+        setTypedText(current.slice(0, typedText.length + 1));
+      } else {
+        setDeleting(true);
+      }
+    } else {
+      if (typedText.length > 0) {
+        setTypedText(typedText.slice(0, -1));
+      } else {
         setDeleting(false);
-        setTIdx((i) => (i + 1) % titles.length);
-      }, 0);
+        setTIdx((prev) => (prev + 1) % titles.length);
+      }
     }
-    return () => clearTimeout(timeout);
-  }, [typedText, deleting, tIdx]);
+  }, !deleting && typedText.length === current.length ? 1800 : deleting ? 45 : 80);
+
+  return () => clearTimeout(timeout);
+}, [typedText, deleting, tIdx]);
 
   return (
     <section id="home" className="hero">
