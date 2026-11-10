@@ -1,187 +1,59 @@
-# Pratheeksha Shetty — Portfolio
+# Pratheeksha Shetty | Portfolio
 
-A modern and responsive personal portfolio website built with React and Vite to showcase my skills, projects, education, certifications, and achievements.
+A modern, responsive personal portfolio showcasing my software development projects, technical skills, education, certifications, and achievements.
 
-## 🌐 Portfolio
-
-**Developer:** Pratheeksha Shetty  
-**Program:** Master of Computer Applications (MCA)  
-**Institution:** NMAM Institute of Technology, Nitte
+🌐 **Live Portfolio:** [Visit My Portfolio](https://portfolio-one-virid-71.vercel.app/)
 
 ---
 
-## 🚀 About
+## 👩‍💻 About Me
 
-I am an MCA student interested in software development, Java backend development, full-stack development, Artificial Intelligence, and problem solving.
+Hi! I'm **Pratheeksha Shetty**, an MCA student at NMAM Institute of Technology, Nitte.
 
-This portfolio highlights my technical skills, academic projects, certifications, and experience while providing an overview of my development journey.
+I'm passionate about software development, full-stack engineering, backend development, and Artificial Intelligence. I enjoy building practical applications, exploring emerging technologies, and solving real-world problems through code.
 
----
-
-## 🛠️ Technologies Used
-
-### Frontend
-- ReactJS
-- JavaScript
-- HTML5
-- CSS3
-
-### Backend & APIs
-- Java
-- Spring Boot
-- Django REST
-- REST APIs
-- JDBC
-
-### Databases
-- MySQL
-- PostgreSQL
-- MongoDB
-
-### AI & Other Technologies
-- Artificial Intelligence
-- Machine Learning
-- NLP
-- OCR
-- Web Speech API
-
-### Tools
-- Git
-- GitHub
-- VS Code
-- Vite
+My interests include Java, Spring Boot, Python, React, machine learning, and application development.
 
 ---
 
-## 📌 Featured Projects
+## 🚀 Featured Projects
 
-### 1. EMERQ — Smart Emergency Triage System
+### 1. EL NIÑO XAI – Explainable Extreme El Niño Prediction Platform
 
-A full-stack emergency triage system designed to assist in managing patients based on the severity of their condition.
+An explainable AI platform that predicts Extreme El Niño events 3, 6, 9, and 12 months ahead using five NOAA oceanic predictors.
+
+Class-weighted XGBoost models are validated using Leave-One-Out Cross-Validation and explained using SHAP.
 
 **Key Features:**
-- Real-time patient monitoring
-- Intelligent queue management
-- Patient priority scoring
-- Emergency classification
-- REST API integration
+- Extreme El Niño event prediction.
+- Class probability-based predictions.
+- SHAP-based model explanations.
+- Predictor importance analysis.
+- Historical event analysis.
+- Model comparison.
+- Dataset explorer and prediction history.
+- JWT authentication and admin section.
 
-**Technologies:** ReactJS, Django REST, MongoDB
+**Technologies:** ReactJS, FastAPI, PostgreSQL, XGBoost, SHAP, JWT.
 
----
+### 2. PLACEMENTIQ – AI Placement Preparation Platform
 
-### 2. ACCESSNOVA — AI-Powered Assistive Platform
-
-An AI-based accessibility platform designed to provide communication, navigation, and learning assistance for people with special needs.
-
-**Key Features:**
-- Braille-to-text and voice translation
-- OCR-based text recognition
-- Smart navigation assistance
-- Sign language translation
-- AI learning assistant
-- Voice navigation
-- Braille learning support
-
-**Technologies:** MERN Stack, OCR, Web Speech API, AI/ML
-
----
-
-### 3. PLACEMENTIQ — AI Placement Preparation Platform
-
-An AI-powered platform designed to help students prepare for technical and HR placement interviews.
+An AI-powered placement preparation platform designed to help students prepare for technical and HR interviews.
 
 **Key Features:**
-- ATS-based resume analysis
-- Job description matching
-- Personalized interview questions
-- AI mock interviews
-- Real-time feedback
-- Performance analytics
-- Progress tracking
-- Secure authentication
+- ATS-based resume analysis.
+- Job description matching.
+- Personalized interview question generation.
+- AI-powered mock interviews.
+- Real-time feedback.
+- Performance analytics.
+- Secure authentication.
+- Progress tracking.
 
-**Technologies:** Spring Boot, ReactJS, PostgreSQL, OpenAI API, JWT, REST APIs
+**Technologies:** Spring Boot, ReactJS, PostgreSQL, OpenAI API, JWT, REST APIs.
 
----
+### 3. FutureMe – Messages to Your Future Self
 
-### 4. TRUEHIRE — AI Job Scam Detection Platform
+A time-capsule web application that allows users to write personal letters to their future selves and schedule when they can be opened.
 
-An AI-powered job verification platform designed to identify potentially fraudulent job opportunities.
-
-**Key Features:**
-- NLP-based job authenticity scoring
-- Company verification
-- Fraud detection
-- Community scam reporting
-- Job verification dashboard
-- Secure REST APIs
-
-**Technologies:** Java, Spring Boot, ReactJS, MySQL, NLP
-
----
-
-## 🎓 Education
-
-### Master of Computer Applications (MCA)
-**NMAM Institute of Technology, Nitte**
-
-### Bachelor of Science
-**Mathematics & Computer Science**  
-Canara College, Mangalore
-
----
-
-## 📜 Certifications
-
-- Salesforce AI Associate
-- Microsoft Applied AI
-- Cloud Computing & Distributed Systems — NPTEL
-
----
-
-## 🏆 Achievements
-
-- 🥇 1st Place — NSS Pick and Speak
-- 🏅 Best Participant — Mahindra Pride Classroom & Naandi Foundation
-
----
-
-## 💡 Skills
-
-- Java
-- Python
-- C
-- JavaScript
-- ReactJS
-- Spring Boot
-- Django REST
-- REST APIs
-- MySQL
-- PostgreSQL
-- MongoDB
-- Git & GitHub
-- Data Structures & Algorithms
-- Object-Oriented Programming
-- DBMS
-- Operating Systems
-- Computer Networks
-
----
-
-## 📫 Connect With Me
-
-**GitHub:**  
-https://github.com/pratheeshetty367-Syntaxia
-
-**Portfolio:**  
-https://portfolio-one-virid-71.vercel.app/
-
-
-
-## ⚙️ Run Locally
-
-Clone the repository:
-
-```bash
-git clone https://github.com/pratheeshetty367-Syntaxia/Portfolio.git
+**Key Features
